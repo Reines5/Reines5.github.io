@@ -1,24 +1,14 @@
-// function scrollToElement(elementSelector, instance = 0) {
-//     const elements = document.querySelectorAll(elementSelector);
-//     if (elements.length > instance) {
-//         elements[instance].scrollIntoView({
-//             behavior: 'smooth'
-//         });
-//     }
-// }
-
-// const link1 = document.getElementById("link1");
-// const link2 = document.getElementById("link2");
-// const link3 = document.getElementById("link2");
-
-// link1.addEventListener('click', () => {
-//     scrollToElement('.header');
-// });
-
-// link2.addEventListener('click', () => {
-//     scrollToElement('.header', 1);
-// });
-
-// link3.addEventListener('click', () => {
-//     scrollToElement('.column');
-// });
+$(document).ready(function () {
+    $("a[href^='#']").on("click", function (event) {
+        event.preventDefault();
+        var hash = this.hash;
+        $("html, body").animate({
+                scrollTop: $(hash).offset().top,
+            },
+            800, // Adjust the scrolling speed if needed
+            function () {
+                window.location.hash = hash;
+            }
+        );
+    });
+});

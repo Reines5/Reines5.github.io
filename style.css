@@ -284,6 +284,14 @@ section .header {
     margin-right: 0.3rem;
 }
 
+.buy-btn a {
+    color: #fff;
+}
+
+.buy-btn a:hover {
+    color: #006774;
+}
+
 .pricing .card button {
     color: #fff;
     background-color: transparent;
@@ -340,14 +348,14 @@ footer .column h4 {
     font-weight: 400;
 }
 
-footer .column > a {
+footer .column>a {
     display: block;
     color: #ccc;
     margin-bottom: 1rem;
     transition: all 0.3s ease;
 }
 
-footer .column > a:hover {
+footer .column>a:hover {
     color: #ff7300;
 }
 
@@ -364,18 +372,23 @@ footer .column > a:hover {
     .nav-links {
         display: none;
     }
+
     header {
         grid-template-columns: repeat(1, 1fr);
     }
+
     header .image {
         grid-area: 1/1/2/2;
     }
+
     .features {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .pricing {
         grid-template-columns: repeat(2, 1fr);
     }
+
     footer {
         grid-template-columns: 1fr 200px;
     }
@@ -385,12 +398,15 @@ footer .column > a:hover {
     header .image {
         display: none;
     }
+
     .features {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .pricing {
         grid-template-columns: repeat(1, 1fr);
     }
+
     footer {
         grid-template-columns: 1fr 150px;
     }
