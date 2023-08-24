@@ -284,14 +284,6 @@ section .header {
     margin-right: 0.3rem;
 }
 
-.buy-btn a {
-    color: #fff;
-}
-
-.buy-btn a:hover {
-    color: #006774;
-}
-
 .pricing .card button {
     color: #fff;
     background-color: transparent;
@@ -301,6 +293,14 @@ section .header {
 .pricing .card button:hover {
     background-color: #006774;
     border-color: #006774;
+}
+
+.buy-btn a {
+    color: #fff;
+}
+
+.buy-btn a:hover {
+    color: #006774;
 }
 
 footer {
