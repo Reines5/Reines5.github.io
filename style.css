@@ -300,7 +300,8 @@ section .header {
 }
 
 .buy-btn a:hover {
-    color: #006774;
+    background-color: #006774;
+    border-color: #006774;
 }
 
 footer {

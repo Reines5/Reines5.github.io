@@ -8,49 +8,150 @@
     box-sizing: border-box;
 }
 
-img {
-    width: 100%;
-    display: flex;
-}
-
 a {
-    color: #ccc;
     text-decoration: none;
-}
-
-h1 {
-    margin-top: 3rem;
-    font-size: 2rem;
-    text-align: center;
-}
-
-h2 {
-    margin-top: 2rem;
-    margin-left: 3rem;
-}
-
-
-h3 {
-    margin-top: 1.5rem;
-    margin-left: 5rem;
-}
-
-p {
-    margin-top: 1rem;
-    margin-left: 6rem;
-    margin-right: 6rem;
-    /* padding: 0.5rem; */
-    font-size: 1rem;
-}
-
-li {
-    margin-top: 1rem;
-    margin-left: 6rem;
-    margin-right: 6rem;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #18181B;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #18181B;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-logo img {
+    max-width: 100px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a {
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+
+.link a::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ff7300;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after {
+    width: 70%;
+}
+
+.hire-btn a {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff7300;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hire-btn:hover {
+    background-color: #006774;
+}
+
+.btn {
+    margin-left: -2rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff7300;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn a {
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #006774;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.blur {
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #ff7300;
+    z-index: -100;
+}
+
+header {
+    position: relative;
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+header .content h1 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content h2 {
+    margin-left: 1rem;
+    color: #fff;
+    margin-bottom: 0.50rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 3rem;
+}
+
+header .content h3 {
+    margin-left: 1.50rem;
+    color: #fff;
+    margin-bottom: 0.25rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+header .content p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+header .content li {
+    list-style: none;
+    margin-left: 2.5rem;
+    margin-right: 2rem;
     color: #ccc;
 }
