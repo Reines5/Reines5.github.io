@@ -307,7 +307,7 @@ section .header {
 footer {
     position: relative;
     display: grid;
-    grid-template-columns: 400px repeat(3, 1fr);
+    grid-template-columns: 400px repeat(2, 1fr);
     gap: 2rem;
 }
 

@@ -155,3 +155,18 @@ header .content li {
     margin-right: 2rem;
     color: #ccc;
 }
+
+.copyright {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@media (width < 900px) {
+    .nav-links {
+        display: none;
+    }
+}
